@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 49-52</title>
+</head>
+<body>
+  <h2>Signup Form</h2>
+  <form id="signupForm">
+    <label>Name: <input type="text" id="name" required></label><br><br>
+    <label>Email: <input type="email" id="email" required></label><br><br>
+    <label>Password: <input type="password" id="password" required></label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="formOutput"></div>
+
+  <hr>
+
+  <h2>Item Details</h2>
+  <div id="item">
+    <p>
+      This is a short description of the item.
+      <span id="moreText" style="display:none;">
+        Here is the full detail of this item that is revealed when you click read more.
+      </span>
+    </p>
+    <button id="readMoreBtn">Read more</button>
+  </div>
+
+  <hr>
+
+  <h2>Student Details</h2>
+  <form id="studentForm">
+    <label>Name: <input type="text" id="studentName" required></label>
+    <label>Age: <input type="number" id="studentAge" required></label>
+    <button type="submit">Add Student</button>
+  </form>
+
+  <table border="1" id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <br>
+        <th>Age</th>
+        <br>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Hidden edit form -->
+  <div id="editForm" style="display:none; margin-top:15px;">
+    <h3>Edit Student</h3>
+    <label>Name: <input type="text" id="editName"></label>
+    <br>
+    <br>
+    <label>Age: <input type="number" id="editAge"></label>
+    <br>
+    <br>
+    <button id="updateBtn">Update</button>
+  </div>
+
+  <!-- Link external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
